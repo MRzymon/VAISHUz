@@ -11,7 +11,7 @@ for pkg,imp in [("flask","flask"),("requests","requests")]:
 
 # ╔══════════════════════════════════════════════╗
 # ║  PASTE YOUR API KEY HERE (optional)           ║
-API_KEY = ""
+API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
 # ╚══════════════════════════════════════════════╝
 
 from flask import Flask, request, jsonify, render_template_string
