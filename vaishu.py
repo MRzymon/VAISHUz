@@ -11,6 +11,10 @@ for pkg,imp in [("flask","flask"),("requests","requests")]:
 
 # ╔══════════════════════════════════════════════╗
 # ║  PASTE YOUR API KEY HERE (optional)           ║
+import os
+from flask import Flask
+# ... other imports
+
 API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
 # ╚══════════════════════════════════════════════╝
 
